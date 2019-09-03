@@ -1,0 +1,25 @@
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	line-height: 26px;
+	border: none;
+	z-index: 1700;
+	}
+	/*头部背景颜色的样式*/
+.bg-dark {
+	background-color: #06060a !important;
+}
+/*图标*/
+header img{
+	margin-right: 30%;
+}
+.navbar-brand{color: #c9caca; padding: 0 30px;
+	font-size: 15px;}
+
+header:after{
+	content:"";
+	display: block;
+	clear: both;
+}

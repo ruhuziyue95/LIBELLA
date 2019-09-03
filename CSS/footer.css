@@ -1,0 +1,40 @@
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	line-height: 26px;
+	background-color: #002729;
+	border: none;
+	z-index: 1700;
+	text-align: right;
+	padding: 5px 0 !important;
+}
+footer:after{
+	content:"";
+	display:block;
+	clear: both;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+	display: inline-block;
+	padding: 0;
+	color: #6c757d;
+	content: "/";
+}
+
+footer ul li a:hover{
+	text-decoration: none;
+	color:#8e8e8e ;
+}
+/*小图标的样式*/
+.content_style .breadcrumb-item + .breadcrumb-item::before {
+	color:#fff;
+	content:"|";
+	padding-left:3px;
+}
+footer p{
+	margin-right: 140px;
+	margin-bottom:0px;
+	width:500px;
+	font-size:14px;
+}
