@@ -11,11 +11,14 @@ body{
 .text_color{color:#8e8e8e;}
 /*字体大小*/
 .font_small {font-size:0.85rem;}
-/**/
+/* 公用背景颜色 */
+.bg_color{background-color:#002729;}
+/*外边距溢出*/
 .tab_be::before{
   content:"";
   display: table;
 }
+/* 高度坍塌 */
 .cle_af::after{
 	content:"";
 	display: block;

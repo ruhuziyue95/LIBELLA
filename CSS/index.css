@@ -1,0 +1,107 @@
+.floor_bg{
+  background-image:url(../upload/201905/1557126491.jpg);
+}
+.floor_bg:before{
+  content:"";
+  display:table;
+}
+body{width:100%;}
+.h-25{
+  display:block;
+  height:52px !important;
+  overflow: hidden;
+  list-style: none;
+  padding: 0 5px;
+  line-height: 26px;
+  font-size:14px;
+  margin-bottom: 11px;
+  width:245px;
+}
+.h-25:hover{
+  text-decoration: none;
+}
+a:hover{
+  color:#8e8e8e;
+  text-decoration: none;
+}
+/* 第三层的样式 */
+.service-cut {
+  width: 1000%;
+  height: 100%;
+}
+.service-bin{
+  width:272px;
+  height: 512px;
+  float: left;
+  position: relative;
+}
+.service-bin:first-child{
+  margin-left:120px;
+}
+.service-bin a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  right: 15px;
+  height: 150px;
+  margin-top: -75px;
+  text-align: center;
+  color:#fff;
+} 
+.service-bin a img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  visibility: hidden;
+  z-index: 999;
+  opacity: 0;
+  vertical-align: middle;
+  border: 0;
+}
+.service-bin a i{
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  color: #a8a8a8;
+  font-size: 60px;
+  line-height: 1;
+  font-style: normal;
+  font-family: Times;
+  transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  -ms-transition: .35s ease-in-out;
+  -o-transition: .35s ease-in-out;
+  -webkit-transition: .35s ease-in-out;
+}
+.service-bin a b{
+  display: block;
+  font-size: 17px;
+  padding: 15px 0;
+  font-weight: normal;
+}
+.service-bin a p {
+  display: block;
+  color: #fff;
+  padding: 0 5 11 5px;
+  line-height: 26px;
+  height: 52px;
+  overflow: hidden;
+}
+.service-bin a span{
+ display: block;
+ font-family: Times;
+ color: #8e8e8e;
+ letter-spacing: 1px;
+}
+.service-bin a span em {
+  font-size: 20px;
+  display: inline-block;
+  font-family: '';
+  font-style: normal;
+  color: #8e8e8e;
+  position: relative;
+  top: 3px;
+  padding-left: 5px;}

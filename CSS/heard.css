@@ -12,11 +12,13 @@ header{
 	background-color: #06060a !important;
 }
 /*图标*/
-header img{
-	margin-right: 30%;
+.navbar-dark .navbar-brand:hover{
+	animation:bounce ease-out infinite 2.5s; 
 }
-.navbar-brand{color: #c9caca; padding: 0 30px;
-	font-size: 15px;}
+.navbar-brand{ 
+	margin: 0 30px;
+	font-size: 15px;
+}
 
 header:after{
 	content:"";
