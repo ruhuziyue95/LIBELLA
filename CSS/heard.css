@@ -7,6 +7,16 @@ header{
 	border: none;
 	z-index: 1700;
 	}
+	/*公共样式*/
+	li{
+		list-style:none;
+		cursor: pointer;
+	}
+	a{color:#fff}
+	a:hover{
+		color: #c9caca;
+		text-decoration: none;
+	}
 	/*头部背景颜色的样式*/
 .bg-dark {
 	background-color: #06060a !important;
@@ -25,3 +35,19 @@ header:after{
 	display: block;
 	clear: both;
 }
+/*二级菜单样式*/
+.nav-link{
+	padding: 0 15px;
+	margin-right:24px;
+}
+.nav-item>a.active+ul.nav-menu{
+	opacity:1;
+}
+.nav-menu{
+	position: absolute;
+	background-color: #06060a;
+	transform: translateY(30px);
+	padding:0;
+	opacity: 0;
+}
+.nav-menu>li{padding:15px 15px;}
