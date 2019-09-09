@@ -1,0 +1,84 @@
+ .met-nav{
+  text-align: center;
+  border-bottom: 1px solid #f0f2f5;
+  }
+  .met-nav-ul{
+    list-style:none;
+  }
+    .met-nav-ul>li{
+      display: inline-block;
+      margin: 20px 10px;
+    }
+/********************/
+.met-show{
+  margin:32px 120px;
+  padding-top:50px;
+  font-size:15px;
+}
+  .met-show-top>p{
+    margin-bottom: 16px;
+    text-indent:25px/*首字母缩进*/
+  }
+  .met-show-top>p span{
+    color: rgb(242, 242, 242);
+  }
+  .met-show-top>span{
+    display: block;
+    color: rgb(242, 242, 242);
+    margin-bottom: 16px;
+    text-indent:25px
+  }
+  .met-show-top>span:last-child{
+    font-family: 宋体; font-size: 17px;
+    text-align: center;
+    color:#fff;
+    margin-top:80px;
+    margin-bottom: 32px;
+  }
+  
+  .met-show-img{
+    text-align: center;
+    margin-top: 16px;
+  }
+  .met-show-img>img{
+    width: 1084px;
+    height: 610px;
+  }
+  .met-show-bottom{
+    text-align: center;
+    margin: 32px 0;
+    font-size:15px;
+    color: rgb(242, 242, 242);
+  }
+  .met-show-bottom>p{
+    margin: 32px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

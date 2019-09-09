@@ -24,3 +24,12 @@ body{
 	display: block;
 	clear: both;
 }
+ /*a元素共用样式*/
+	a{
+		color:#fff;
+		text-decoration: none;
+	}
+	a:hover{
+		color: #c9caca;
+		background-color: transparent;
+	}

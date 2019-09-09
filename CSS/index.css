@@ -20,12 +20,6 @@ body{width:100%;}
 .h-25:hover{
   text-decoration: none;
 }
-a{color:#fff}
-a:hover{
-  color: #c9caca;
-  text-decoration: none;
-  background-color: transparent;
-}
 /* 第三层的样式 */
 .service-cut {
   width: 1000%;
@@ -160,15 +154,7 @@ a:hover{
     top:50%;
     margin-top:-38px;
   }
-  /* .fa{
-    position: relative;
-  }  */
-  .fa-angle-left::before{
-   content: "<"
-  }
-  .fa-angle-right::before{
-    content: ">"
-   }
+  
    /*内容右侧*/
    .info-box{
      height: 100%;
@@ -283,13 +269,7 @@ a:hover{
      padding-top:2px;
    }
    .ctrl-box .info-list{background-color: rgba(255,255,255,.08);}
-   /* .info-list{
-     height: 100%;
-     max-width: 345px;
-     border-left:1px solid rgba(0,0,.06);
-     position: relative;
-     margin: 0 auto;
-   } */
+  
    .info-list a{
      display: block;
      position: relative;
@@ -348,3 +328,12 @@ a:hover{
       transition: .3s;
       transform: translateX(0);
    }
+/*第六层-->联系*/
+.touch-box{
+  padding: 50px 100px 86px 200px;
+}
+.touch-right{
+  float: right;
+  line-height: 0;
+  max-width: 60%;
+}

@@ -67,6 +67,18 @@
 #met-grid .masonry-item:nth-child(4){
   top:0px;left:900px;
 }
+#met-grid .masonry-item:nth-child(5){
+  top:432px;left:0x;
+}
+#met-grid .masonry-item:nth-child(6){
+  top:432px;left:300px;
+}
+#met-grid .masonry-item:nth-child(7){
+  top:432px;left:600px;
+}
+#met-grid .masonry-item:nth-child(8){
+  top:432px;left:900px;
+}
 .masonry-item{
   position: absolute;
   float: left;

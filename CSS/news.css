@@ -44,7 +44,13 @@ p.info{
   margin: 0;
 }
 /* nav */
-.nav{
+.hidden-xs{
+  position: relative;
+}
+.hidden-xs .met_pager{
+  text-align: center;
+}
+.hidden-xs ul.nav{
   margin-left:200px;
 }
 .hidden-xs .met_pager .nav li{
@@ -56,7 +62,7 @@ line-height: 36px;
 /* span */
 .hidden-xs .met_pager .nav span{
   background-color: #fff;
-  width:58px;
+  width:65px;
   text-align: center;
   line-height: 36px;
   color: #8a8a8a;
@@ -73,12 +79,12 @@ line-height: 36px;
   color:#ccd5db;
 }
 /*li  a*/
-.hidden-xs .met_pager .nav li:not(:last-child){
+ .hidden-xs .met_pager .nav li:not(:last-child){ 
   border-right:1px solid #ccd5db;
-}
+} 
 .hidden-xs .met_pager .nav a{
   color:#8a8a8a;
-}
+} 
 .hidden-xs .met_pager .nav a:hover{
   text-decoration: none;
   color:#8a8a8a;
@@ -90,7 +96,7 @@ line-height: 36px;
 }
 .hidden-xs .met_pager .nav .disabled a{
   color: #fff;
-}
+} 
 
 /*右侧内容样式*/
 .met-news-bar{
