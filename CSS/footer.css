@@ -22,19 +22,29 @@ footer:after{
 	content: "/";
 }
 
-footer ul li a:hover{
+footer a:hover{
 	text-decoration: none;
 	color:#8e8e8e ;
 }
-/*小图标的样式*/
-.content_style .breadcrumb-item + .breadcrumb-item::before {
-	color:#fff;
-	content:"|";
-	padding-left:3px;
+a{
+	color:#8e8e8e ;
+	font-size:14px;
+}
+footer b{
+	font-size:14px;
 }
 footer p{
-	margin-right: 140px;
 	margin-bottom:0px;
-	width:500px;
+	/*width:500px; */
 	font-size:14px;
+}
+footer .foot-icon{
+	margin:0;
+	padding: 0;
+}
+footer .foot-icon .breadcrumb-item + .breadcrumb-item::before {
+	color:#8e8e8e;
+	content:"|";
+ padding-left:3px;
+ padding-right:3px;
 }

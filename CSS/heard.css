@@ -6,14 +6,16 @@ header{
 	line-height: 26px;
 	border: none;
 	z-index: 1700;
+	overflow: hidden;
 	}
 	/*公共样式*/
 	li{
 		list-style:none;
 		cursor: pointer;
 	}
-	a{color:#fff}
-	a:hover{
+#content a{color:#fff}
+#content a.active{color:#c9caca}
+#content a:hover{
 		color: #c9caca;
 		text-decoration: none;
 	}
