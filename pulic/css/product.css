@@ -3,7 +3,7 @@
   background-color: transparent;
   
 }
-.breadcrumb-item + .breadcrumb-item::before {
+.sidebar_title .breadcrumb-item + .breadcrumb-item::before {
   content: "";}
 /*三角形小标*/
 .icon{
@@ -16,12 +16,12 @@
   border-left: 4px solid transparent;
   }
 .icon:hover{color:#c9caca;}
-.breadcrumb  .breadcrumb-item a{
+.sidebar_title .breadcrumb  .breadcrumb-item a{
   font-size:16px;
   color:#fff;
   padding: 14px;
 }
-.breadcrumb .breadcrumb-item a:hover{
+.sidebar_title .breadcrumb .breadcrumb-item a:hover{
   text-decoration: none;
   color:#c9caca;
 }
@@ -112,3 +112,7 @@
   color: #393939;
   text-decoration: none;
 }
+.hidden-xs{
+  margin-bottom: 100px;
+}
+

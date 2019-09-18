@@ -30,10 +30,10 @@ CREATE TABLE `zy_cartoon` (
 -- ----------------------------
 -- Records of zy_cartoon
 -- ----------------------------
-INSERT INTO `zy_cartoon` VALUES ('1', '../upload/201905/1557138120.jpg', '', '0');
-INSERT INTO `zy_cartoon` VALUES ('2', '../upload/201905/1557138159.jpg', '', '1');
-INSERT INTO `zy_cartoon` VALUES ('3', '../upload/201905/1557138229.jpg', '', '2');
-INSERT INTO `zy_cartoon` VALUES ('4', '../upload/201905/1557138878.jpg', '', '3');
+INSERT INTO `zy_cartoon` VALUES ('1', 'upload/201905/1557138120.jpg', '', '0');
+INSERT INTO `zy_cartoon` VALUES ('2', 'upload/201905/1557138159.jpg', '', '1');
+INSERT INTO `zy_cartoon` VALUES ('3', 'upload/201905/1557138229.jpg', '', '2');
+INSERT INTO `zy_cartoon` VALUES ('4', 'upload/201905/1557138878.jpg', '', '3');
 
 -- ----------------------------
 -- Table structure for zy_category
@@ -52,9 +52,9 @@ CREATE TABLE `zy_category` (
 -- Records of zy_category
 -- ----------------------------
 INSERT INTO `zy_category` VALUES ('1', '婚纱', '就像期许一场和世界的柔情对话，我们将对细节的考究和对高品质的坚持，全部融入在每一件婚纱设计中，我们希望，在黎贝拉，您能像公主一样出嫁。', '../upload/thumb_src/500_500/1508482218.jpg', '0');
-INSERT INTO `zy_category` VALUES ('2', '礼服', 'LIBELLA担任你的私人新娘形象顾问，为你打造属于个人的专属之美，人生中最重要的时刻呈现品味不凡的完美形象，留存最迷人瞬间，珍藏最动人的时刻，实现你的梦想，打造完美新娘。', '../upload/thumb_src/500_500/1557136535.jpg', '0');
-INSERT INTO `zy_category` VALUES ('3', '龙凤褂', '', '../upload/thumb_src/500_500/1558924262.jpg', '0');
-INSERT INTO `zy_category` VALUES ('4', '男装定制', '无需刻意表达，每个不经意的举止，都能赋予您绅士的品味与气度。', '../upload/thumb_src/500_500/1557136535.jpg', '0');
+INSERT INTO `zy_category` VALUES ('2', '礼服', 'LIBELLA担任你的私人新娘形象顾问，为你打造属于个人的专属之美，人生中最重要的时刻呈现品味不凡的完美形象，留存最迷人瞬间，珍藏最动人的时刻，实现你的梦想，打造完美新娘。', 'upload/thumb_src/500_500/1557136535.jpg', '0');
+INSERT INTO `zy_category` VALUES ('3', '龙凤褂', '', 'upload/thumb_src/500_500/1558924262.jpg', '0');
+INSERT INTO `zy_category` VALUES ('4', '男装定制', '无需刻意表达，每个不经意的举止，都能赋予您绅士的品味与气度。', 'upload/thumb_src/500_500/1557136535.jpg', '0');
 
 -- ----------------------------
 -- Table structure for zy_link

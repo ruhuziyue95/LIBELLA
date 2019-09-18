@@ -5,7 +5,7 @@ $(function(){
     success: function(result) {
       //console.log(result);
       $(result).replaceAll("#header");
-      $(`<link rel="stylesheet" href="../CSS/heard.css">`).appendTo("head")
+      $(`<link rel="stylesheet" href="css/heard.css">`).appendTo("head")
     }
   })
 })
