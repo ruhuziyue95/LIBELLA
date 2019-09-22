@@ -20,41 +20,86 @@ body{width:100%;}
 .h-25:hover{
   text-decoration: none;
 }
-/* 第三层的样式 */
+.row{
+  margin:0px;
+}
+/* 婚纱新品 */
+.price-box{
+  display: flex;
+  flex-wrap: nowrap;
+  margin:0% 5%;
+  overflow: hidden;
+}
+.price-box .price-bin{
+ flex:0 0 23%;
+ margin:10px; 
+}
+.price-bin a:hover img{
+  width: 250px;
+  height: 340px;
+  display: block;
+  transform: scale(1.1);
+  transition:.3s;
+}
+.price-bin a b{
+  margin-left:50px;
+}
+/* 产品的样式 */
 .service-cut {
   width: 1000%;
   height: 100%;
 }
 .service-bin{
-  width:272px;
-  height: 512px;
+  width:270px;
+  height: 500px;
   float: left;
   position: relative;
+  margin-top:-75px;
+  overflow: hidden;
+  border-left:1px solid rgba(0,0,0,.06);
 }
 .service-bin:first-child{
-  margin-left:120px;
+  margin-left:1.5%;
 }
 .service-bin a {
   display: block;
   position: absolute;
-  top: 50%;
+  top:45%;
   left: 15px;
   right: 15px;
   height: 150px;
-  margin-top: -75px;
   text-align: center;
   color:#fff;
 } 
+
 .service-bin a img {
-  width: 100%;
+  width: 90%;
   position: absolute;
-  left: 0;
-  bottom: 100%;
+  left:0;bottom: 100%;
   visibility: hidden;
   z-index: 999;
   opacity: 0;
   vertical-align: middle;
   border: 0;
+  transition:.3s;
+}
+.service-bin:hover{
+  background-color:rgba(0,0,0,.8);
+  transition:.6s;
+}
+.service-bin:hover i{
+  transform: scale(2);
+  opacity: 0;
+}
+.service-bin:hover a{
+  color:#8c8c8c;
+  margin-top:20px;
+}
+.service-bin:hover img{
+  visibility:visible;
+  opacity: 1;
+  transition:.3s;
+  margin-bottom: 20px;
 }
 .service-bin a i{
   display: block;
@@ -83,7 +128,7 @@ body{width:100%;}
   color: #fff;
   padding: 0 5 11 5px;
   line-height: 26px;
-  height: 52px;
+  height: 50px;
   overflow: hidden;
 }
 .service-bin a span{
@@ -101,6 +146,8 @@ body{width:100%;}
   position: relative;
   top: 3px;
   padding-left: 5px;}
+/* 箭头样式 */
+
   /*第五层样式  新闻*/
   .window-bin{
     height: 512px;

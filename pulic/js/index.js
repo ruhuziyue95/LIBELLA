@@ -13,11 +13,11 @@ $(function(){
     ]*/
     var cs=result;
     var html="";
-    for(var c of cs){
-      //console.log(c)
+    for(var i=0;i<cs.length;i++){
+      //console.log(i)
       html+=`
       <div class="carousel-item">
-      <img class="w-100"src="${c.cartoon_url}" />
+      <img class="w-100"src="${cs[i].cartoon_url}" />
       </div>
       `
     //console.log(c.cartoon_sort);

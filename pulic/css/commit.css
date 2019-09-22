@@ -28,9 +28,9 @@ body{
  /*a元素共用样式*/
 	a{
 		color:#fff;
-		text-decoration: none;
 	}
 	a:hover{
 		color: #c9caca;
+		text-decoration: none;
 		background-color: transparent;
 	}
