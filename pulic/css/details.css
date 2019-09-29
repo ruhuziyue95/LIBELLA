@@ -1,0 +1,97 @@
+/* 删除底部右侧内容 */
+footer .footer-left{opacity: 0;}
+/* 导航样式 */
+.mt-top {
+    max-width: 100%;
+    margin-top:70px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.mt-top a{
+  color:#fff;
+
+}
+.mt-top a:hover{
+  text-decoration: none;
+  color:#c9caca;
+}
+.mt-top .breadcrumb{padding:0;margin:0;border: 0;}
+.mt-top .breadcrumb a{
+  margin-left:5px;
+}
+.mt-top .breadcrumb-item + .breadcrumb-item::before {
+  padding: 0 5px;
+  color: #c9caca;
+ }
+ /* 轮播样式 */
+  /* 图片 */
+  #gallery{
+    height: 500px;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  #gallery .imgLg img{
+    position: absolute;
+    z-index: 10;
+    border:0;
+    height:450px;
+    top:5%;left:30%;bottom:0%;right:2%;
+  }
+  /* 箭头 */
+  
+  #gallery .info-ctrl .ctrl-box{
+    position: relative;
+    top:0%;left: 0%;
+    cursor: pointer;
+  }
+ #gallery .info-ctrl .ctrl-left{
+   position:absolute;
+  width:24px;height:48px;
+  background:rgba(15, 15, 15,0.2) url('../upload/arrow-left.png') no-repeat 5px 15px;
+  top:50%;left: 22%;
+ }
+ #gallery .info-ctrl .ctrl-right{
+   position: absolute;
+  width:24px;height:48px;
+  background:rgba(15, 15, 15,0.2) url('../upload/arrow-right.png') no-repeat 6px 15px;
+  top:50%;left: 82%;
+ }
+ /* 小图片 */
+ .ad-thumbs{
+   position: absolute;
+   top: 97%;left: 30%;
+   bottom:10%;right: 0%;
+ }
+ .ad-thumbs ul li{
+   list-style: none;
+   float: left;
+   margin-left:5px;
+   border: 1px solid #CCC;
+ }
+ /* 左侧样式 */
+ .met-right{
+  position: relative;
+  top:0%;left:-5%;
+  overflow: hidden;
+  padding:0 15px;
+  /* border:1px solid; */
+  margin-top:30px;
+  }
+ .met-right h1{
+  font-weight: 400;
+  line-height: 1.2;
+  color: #37474f;
+  font-size:28px;
+ }
+ .met-right .para{
+   border-top:1px solid #f0f2f5;
+  border-bottom: 1px solid #f0f2f5;
+  width: 450px;
+  padding:15px 15px 0 15px;
+ }
+ .margin-bottom-15{margin-bottom:15px;}
+ .blue-grey-500 {
+  color: #76838f !important;
+}

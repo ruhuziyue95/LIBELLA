@@ -7,13 +7,17 @@ body{
 	color:#8e8e8e;
 	font-family: 黑体;
 	overflow: scroll;
+	overflow-x:hidden;
+	font: 14px/1.5 "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",Roboto,Arial,sans-serif;
 }
 /*颜色字体*/
 .text_color{color:#8e8e8e;}
 /*字体大小*/
 .font_small {font-size:0.85rem;}
 /* 公用背景颜色 */
-.bg_color{background-color:#002729;}
+.bg_color{
+	background-color:#002729;
+}
 /*外边距溢出*/
 .tab_be::before{
   content:"";
@@ -34,3 +38,21 @@ body{
 		text-decoration: none;
 		background-color: transparent;
 	}
+	/*定义product跟details导航栏的公共样式*/
+	/*导航栏的样式*/
+	.breadcrumb{
+		background-color: transparent;
+	}
+	.sidebar_title .breadcrumb-item + .breadcrumb-item::before {
+		content: "";}
+	/*三角形小标*/
+	.icon{
+		display: inline-block;
+		width: 0;
+		height: 0;
+		vertical-align: middle;
+		border-top: 4px solid #fff;
+		border-right: 4px solid transparent;
+		border-left: 4px solid transparent;
+		}
+	.breadcrumb .breadcrumb-item a:hover .icon{border-top: 4px solid #c9caca;}

@@ -10,12 +10,12 @@
 	<link rel="stylesheet" href="css/commit.css"/>
 	<link rel="stylesheet" href="css/index.css">
 </head>
-<body style="overflow:scroll;overflow-x:hidden"> 
+<body> 
 <header id="header" class="container"></header>
 <!-- 首页 -->
 <main class="cantainer">
 	<!--第一层-- 轮播图-->
-	<div id="demo" class="carousel " data-ride="carousel">
+	<div id="demo" class="carousel window-bin" data-ride="carousel">
 		<!-- div.carousel>div.carousel-inner>div.carousel-item*4>img-->
 		<div class="carousel-inner" >
 			<!-- 1.轮播图片-->
@@ -41,57 +41,65 @@
 		</a>
 	</div>
 	<!-- 第二层 婚纱新品-->
-	<div class="floor_bg pb-3">
-		<div class="clearfix mt-4 f2_top">
+	<div class="floor_bg f2 window-bin">
+		<div class="clearfix  f2_top">
 			<h3 class="text-white ml-5 mb-0 ">婚纱新品</h3>
 			<span class="ml-5">NEW</span>
 			<ul class="breadcrumb bg-transparent float-right p-0 mr-5">
 				<li class="breadcrumb-item">
-					<a href="#" class="text_color">全部</a>
+					<a href="javascript:;" class="text_color">全部</a>
 				</li>
 				<li class="breadcrumb-item">
-					<a href="#" class="text_color">婚纱</a>
+					<a href="javascript:;" class="text_color">婚纱</a>
 				</li>
 				<li class="breadcrumb-item">
-					<a href="#" class="text_color">礼服</a>
+					<a href="javascript:;" class="text_color">礼服</a>
 				</li>
 				<li class="breadcrumb-item">
-					<a href="#" class="text_color">龙凤褂</a>
+					<a href="javascript:;" class="text_color">龙凤褂</a>
 				</li>
 				<li class="breadcrumb-item ">
-					<a href="#" class="text_color ">男装定制</a>
+					<a href="javascript:;" class="text_color ">男装定制</a>
 				</li>
 			</ul>
 		</div>
 		<div class="price-box">
 			<div class="price-bin ">
 				<a href="javascript:;">
-					<img class="w-100 " src="upload/thumb_src/400_530/1561110440.jpg"/>
-					<b class="">Pronovias</b>
+					<div class="bin">
+						<img class="w-100 " src="upload/thumb_src/400_530/1561110440.jpg"/>
+					</div>
+					<b class="">Pronovias-2019</b>
 				</a>
 			</div>
 			<div class="price-bin ">
 				<a href="javascript:;">
-					<img class="w-100 " src="upload/thumb_src/400_530/1513924131.jpg" />
+					<div class="bin">
+						<img class="w-100 " src="upload/thumb_src/400_530/1513924131.jpg" />
+					</div>
 					<b class="">046</b>
 				</a>
 			</div>
 			<div class="price-bin ">
 				<a href="javascript:;">
-					<img class="w-100 " src="upload/thumb_src/400_530/1557140824.jpg" />
+					<div class="bin">
+						<img class="w-100 " src="upload/thumb_src/400_530/1557140824.jpg" />
+					</div>
 					<b class="">BRONCE</b>
 				</a>
 			</div>
 			<div class="price-bin ">
 				<a href="javascript:;">
-					<img class="w-100 " src="upload/thumb_src/400_530/1528971967.jpg" />
+					<div class="bin">
+						<img class="w-100 " src="upload/thumb_src/400_530/1528971967.jpg" />
+					</div>
 					<b>CAMMIE</b>
 				</a>
 			</div>
 		</div>
 	</div>
 	<!-- 第三层 产品-->
-	<div class="floor_bg carousel">
+	<div class="f_bg carousel window-bin ">
 		<div class="mt-4">
 				<h3 class="text-white ml-5 mb-0">产品</h3>
 				<span class="ml-5">PRODCUTS</span>
@@ -141,7 +149,7 @@
 		</div>
 	</div>
 	<!-- 第四层 关于-->
-	<div class="row mx-0 floor_bg" style="flex-wrap: nowrap;">
+	<div class="row mx-0 floor_bg window-bin" style="flex-wrap: nowrap;">
 		<div class="col-6 p-0 carousel" id="demo1">
 			<div class="carousel-inner">
 				<div class="carousel-item ">
@@ -254,13 +262,14 @@
 		</div>
   </div> 
 	<!-- 第六层 联系-->
-	<div class="tab_be ">
-		<div class="floor_bg">
-			<div class="my-5 pl-5">
-				<strong class="h4 text-white ">联系</strong>
+	<div class="tab_be f6 window-bin">
+		<div class="f_bg clearfix">
+			<table></table>
+			<div class="title-name clearfix">
+				<strong class="h3 mb-1 ml-2 text-white ">联系</strong>
 				<p>CONTACTS</p>
 			</div>
-			<div class="row clearfix touch-box" style="background-color: #002729">
+			<div class="row clearfix touch-box bg_color" >
 				<div class="float-left col-4 touch-left">
 					<p class="h5 text-white">深圳市黎贝拉服饰有限公司</p>  
 					<p class="font_small mt-3"> 地址：深圳南山华侨城方大城2#楼805-806（龙珠四路与北环大道交汇处）</p>
@@ -288,14 +297,14 @@
 		</div>
 	</div>
 	<!-- 页面滚轮导航 -->
-	<!-- <div class="area-box">
-		<div class="area-cut" data-index="1"><span></span><font>广告</font></div>
-		<div class="area-cut" data-index="2"><span></span><font>婚纱新品</font></div>
-		<div class="area-cut" data-index="3"><span></span><font>产品</font></div>
-		<div class="area-cut" data-index="4"><span></span><font>关于</font></div>
-		<div class="area-cut" data-index="5"><span></span><font>新闻</font></div>
-		<div class="area-cut" data-index="6"><span></span><font>联系</font></div>
-	</div> -->
+	<div class="area-box">
+		<div class="area-cut" data-index="0"><span></span><font>广告</font></div>
+		<div class="area-cut" data-index="1"><span></span><font>婚纱新品</font></div>
+		<div class="area-cut" data-index="2"><span></span><font>产品</font></div>
+		<div class="area-cut" data-index="3"><span></span><font>关于</font></div>
+		<div class="area-cut" data-index="4"><span></span><font>新闻</font></div>
+		<div class="area-cut" data-index="5"><span></span><font>联系</font></div>
+	</div>
 </main>
 <footer id="footer" class="container"></footer>
 <script src="js/header.js"></script>

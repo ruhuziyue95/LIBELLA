@@ -8,7 +8,7 @@ footer{
 	border: none;
 	z-index: 1700;
 	text-align: right;
-	padding: 5px 0 !important;
+	padding:0 !important;
 }
 footer:after{
 	content:"";
@@ -35,7 +35,6 @@ footer b{
 }
 footer p{
 	margin-bottom:0px;
-	/*width:500px; */
 	font-size:14px;
 }
 footer .foot-icon{

@@ -1,21 +1,4 @@
-/*导航栏的样式*/
-.breadcrumb{
-  background-color: transparent;
-  
-}
-.sidebar_title .breadcrumb-item + .breadcrumb-item::before {
-  content: "";}
-/*三角形小标*/
-.icon{
-  display: inline-block;
-  width: 0;
-  height: 0;
-  vertical-align: middle;
-  border-top: 4px solid #fff;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-  }
-.icon:hover{color:#c9caca;}
+/* 导航栏 */
 .sidebar_title .breadcrumb  .breadcrumb-item a{
   font-size:16px;
   color:#fff;

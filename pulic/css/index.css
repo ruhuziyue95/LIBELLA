@@ -1,7 +1,12 @@
+/* 561  657  544*/
+.window-bin{height:600px;}
 .floor_bg{
-  background-image:url(../upload/201905/1557126491.jpg);
+  background-image:url(../upload/201905/1557126078.jpg);
 }
-.floor_bg:before{
+.f_bg{
+  background:url(../upload/201905/1557126491.jpg) no-repeat 0px -200px;
+}
+.window-bin::before{
   content:"";
   display:table;
 }
@@ -24,26 +29,49 @@ body{width:100%;}
   margin:0px;
 }
 /* 婚纱新品 */
-.price-box{
-  display: flex;
-  flex-wrap: nowrap;
-  margin:0% 5%;
-  overflow: hidden;
+.breadcrumb-item{
+  padding:0 5px;
 }
-.price-box .price-bin{
- flex:0 0 23%;
- margin:10px; 
+.f2.window-bin{
+  position: relative;
+  top:0%;left:0%;
 }
-.price-bin a:hover img{
-  width: 250px;
-  height: 340px;
-  display: block;
-  transform: scale(1.1);
-  transition:.3s;
+.f2 .f2_top{
+  position: relative;
+  top:5%;
+  padding: 0 60px;
 }
-.price-bin a b{
-  margin-left:50px;
-}
+  .price-box{
+    display: flex;
+    flex-wrap: nowrap;
+    margin:3% 5% 0%;
+  }
+  .price-box .price-bin{
+  flex:0 0 23%;
+  margin:10px; 
+  }
+  .price-box  .price-bin .bin{
+    overflow: hidden;
+  }
+    .price-box  .price-bin img{
+      transition:.3s;
+    }
+  .price-bin a:hover img{
+    transform: scale(1.1);
+    transition:.3s;
+  }
+  .price-bin a b{
+    display: block;
+    font-size:16px;
+    color:#fff;
+    font-weight: lighter;
+    padding:16px 0 16px
+    transition:.3s;
+  }
+  .price-bin a:hover b{
+    color:#8e8e8e;
+    transition:.3s;
+  }
 /* 产品的样式 */
 .service-cut {
   width: 1000%;
@@ -149,9 +177,6 @@ body{width:100%;}
 /* 箭头样式 */
 
   /*第五层样式  新闻*/
-  .window-bin{
-    height: 512px;
-  }
   .window-bin .window-back{
     position: relative;
     width: 100%;
@@ -224,7 +249,7 @@ body{width:100%;}
      position: relative;
    }
    .info-box .info-bin>div:first-child{
-    height: 100%;
+    height: 580px;
     max-width: 435px;
     border-left:1px solid rgba(255,255,255,.08);
     position: relative;
@@ -376,15 +401,42 @@ body{width:100%;}
       transform: translateX(0);
    }
 /*第六层-->联系*/
-.touch-box{
-  padding: 50px 50px 86px 150px;
+.f6{
+  background:url(../upload/201905/1557126874.jpg) no-repeat 0px -200px;
+}
+.f6 .title-name{
+  position: relative;
+  padding: 50px 60px 0;
+  margin-bottom: 10px;
+  transition: .6s;
+}
+.f6 .title-name strong{
+  font-weight: 100;} 
+  .f6 .title-name:hover{
+    transition: .6s;
+    padding-left: 70px;
+  }
+.f6 .touch-box{
+  margin-top:150px;
+  padding: 100px 50px 86px 150px;
   overflow:hidden;
 }
-.touch-right{
+.f6 .touch-left{
+  padding-left:0px;
+  transition: .6s;
+}
+.f6 .touch-left:hover{
+  padding-left:10px;
+  transition: .6s;
+}
+
+.f6 .touch-right{
   float: right;
   line-height: 0;
   max-width: 60%;
 }
+
+
 /*侧边导航栏*/
 .area-box{position:fixed; right:20px; top:50%; transform:translateY(-50%); -moz-transform:translateY(-50%); z-index:9999;
 
