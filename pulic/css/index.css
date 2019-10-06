@@ -1,6 +1,6 @@
 /* 561  657  544*/
-.window-bin{height:550px;}
-.window-bin.f1{height:610px;}
+.window-bin{height:640px;}
+.window-bin.f1{height:700px;}
 .floor_bg{
   background-image:url(../upload/201905/1557126078.jpg);
 }
@@ -86,6 +86,8 @@ body{width:100%;}
   margin-top:-80px;
   top:0%;left:0%;bottom: 0%;right:0%;
   overflow: hidden;
+}
+.service-bin:not(:first-child){
   border-left:1px solid rgba(0,0,0,.06);
 }
 .service-bin:first-child{
@@ -180,6 +182,30 @@ body{width:100%;}
   right: 81%;}
 .f3 .info-ctrl .ctrl-right {
    left: 81%;}
+   /* 第四层样式 关于 */
+   /* 字体样式 */
+   .f4 .anenst-right{
+    color:rgb(255, 255, 255);
+   }
+   .f4 .anenst-right .anenst-title{
+     padding:40px 80px 16px;
+   }
+   .f4 .anenst-right .anenst-content{
+     margin:0 80px;
+   }
+   .f4 .anenst-right p>span{
+    color:rgb(255, 255, 255);
+    font-weight:700;
+   }
+   .f4 .anenst-right  p{
+    font-weight: normal;
+    color:#a8a8a8;
+    font-family: Times;
+    font-weight:700;
+   }
+   .f4 .anenst-right .anenst-content p:not(:first-child){
+     text-indent: 30px;
+   }
   /*第五层样式  新闻*/
   /*轮播箭头*/
   .info-ctrl .ctrl-box{
@@ -252,6 +278,9 @@ body{width:100%;}
      float: left;
      position: relative;
    }
+   .info-bin:not(:first-child){
+    margin-left:80px;
+  }
    .info-box .info-bin>div:first-child{
     height: 580px;
     max-width: 435px;
@@ -270,6 +299,7 @@ body{width:100%;}
      right: 0; 
      margin-top:-235px;
    }
+   
    .info-only a{
      display:block;
      position: relative;
@@ -400,6 +430,8 @@ body{width:100%;}
 /*第六层-->联系*/
 .f6{
   background:url(../upload/201905/1557126874.jpg) no-repeat 0px -200px;
+  margin-bottom: 55px;
+  border:0;
 }
 .f6 .title-name{
   position: relative;
@@ -414,7 +446,7 @@ body{width:100%;}
     padding-left: 70px;
   }
 .f6 .touch-box{
-  margin:150px 0 21px;
+  margin:220px 0 21px;
   padding: 100px 50px 86px 150px;
   overflow:hidden;
 }
