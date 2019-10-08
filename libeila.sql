@@ -16,7 +16,7 @@ Date: 2019-09-14 17:44:17
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for zy_cartoon
+-- Table structure for zy_cartoon 轮播图
 -- ----------------------------
 DROP TABLE IF EXISTS `zy_cartoon`;
 CREATE TABLE `zy_cartoon` (
@@ -30,13 +30,13 @@ CREATE TABLE `zy_cartoon` (
 -- ----------------------------
 -- Records of zy_cartoon
 -- ----------------------------
-INSERT INTO `zy_cartoon` VALUES ('1', 'upload/201905/1557138120.jpg', '', '0');
-INSERT INTO `zy_cartoon` VALUES ('2', 'upload/201905/1557138159.jpg', '', '1');
-INSERT INTO `zy_cartoon` VALUES ('3', 'upload/201905/1557138229.jpg', '', '2');
-INSERT INTO `zy_cartoon` VALUES ('4', 'upload/201905/1557138878.jpg', '', '3');
+INSERT INTO `zy_cartoon` VALUES ('1', './upload/201905/1557138120.jpg', '', '0');
+INSERT INTO `zy_cartoon` VALUES ('2', './upload/201905/1557138159.jpg', '', '1');
+INSERT INTO `zy_cartoon` VALUES ('3', './upload/201905/1557138229.jpg', '', '2');
+INSERT INTO `zy_cartoon` VALUES ('4', './upload/201905/1557138878.jpg', '', '3');
 
 -- ----------------------------
--- Table structure for zy_category
+-- Table structure for zy_category 
 -- ----------------------------
 DROP TABLE IF EXISTS `zy_category`;
 CREATE TABLE `zy_category` (
@@ -49,37 +49,67 @@ CREATE TABLE `zy_category` (
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
--- Records of zy_category
+-- Records of zy_category 产品
 -- ----------------------------
-INSERT INTO `zy_category` VALUES ('1', '婚纱', '就像期许一场和世界的柔情对话，我们将对细节的考究和对高品质的坚持，全部融入在每一件婚纱设计中，我们希望，在黎贝拉，您能像公主一样出嫁。', '../upload/thumb_src/500_500/1508482218.jpg', '0');
-INSERT INTO `zy_category` VALUES ('2', '礼服', 'LIBELLA担任你的私人新娘形象顾问，为你打造属于个人的专属之美，人生中最重要的时刻呈现品味不凡的完美形象，留存最迷人瞬间，珍藏最动人的时刻，实现你的梦想，打造完美新娘。', 'upload/thumb_src/500_500/1557136535.jpg', '0');
-INSERT INTO `zy_category` VALUES ('3', '龙凤褂', '', 'upload/thumb_src/500_500/1558924262.jpg', '0');
-INSERT INTO `zy_category` VALUES ('4', '男装定制', '无需刻意表达，每个不经意的举止，都能赋予您绅士的品味与气度。', 'upload/thumb_src/500_500/1557136535.jpg', '0');
+INSERT INTO `zy_category` VALUES ('1', '婚纱', '就像期许一场和世界的柔情对话，我们将对细节的考究和对高品质的坚持，全部融入在每一件婚纱设计中，我们希望，在黎贝拉，您能像公主一样出嫁。', './upload/thumb_src/500_500/1508482218.jpg', '0');
+INSERT INTO `zy_category` VALUES ('2', '礼服', 'LIBELLA担任你的私人新娘形象顾问，为你打造属于个人的专属之美，人生中最重要的时刻呈现品味不凡的完美形象，留存最迷人瞬间，珍藏最动人的时刻，实现你的梦想，打造完美新娘。', './upload/thumb_src/500_500/1557136535.jpg', '0');
+INSERT INTO `zy_category` VALUES ('3', '龙凤褂', '', './upload/thumb_src/500_500/1558924262.jpg', '0');
+INSERT INTO `zy_category` VALUES ('4', '男装定制', '无需刻意表达，每个不经意的举止，都能赋予您绅士的品味与气度。', './upload/thumb_src/500_500/1557136535.jpg', '0');
 
 -- ----------------------------
--- Table structure for zy_link
+-- Table structure for zy_product 婚纱新品
 -- ----------------------------
-DROP TABLE IF EXISTS `zy_link`;
-CREATE TABLE `zy_link` (
-  `lid` int(11) NOT NULL AUTO_INCREMENT,
-  `link_desc` varchar(255) DEFAULT NULL COMMENT '链接描述（显示文本）',
-  `link_url` varchar(255) DEFAULT NULL COMMENT '链接',
-  `link_status` int(11) DEFAULT '0' COMMENT '状态',
-  PRIMARY KEY (`lid`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
+DROP TABLE IF EXISTS `zy_product`;
+CREATE TABLE `zy_product`(
+  `pid` INT(11) NOT NULL AUTO_INCREMENT,
+  `pname` varchar(255) DEFAULT NULL COMMENT '产品名称',
+  `pimg` varchar(255) DEFAULT NULL COMMENT '图片入径',
+  `pstatus` int(11) DEFAULT '0' COMMENT '状态',
+  PRIMARY KEY (`cid`)
+)ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+-- ----------------------------
+-- Records of zy_category 婚纱新品数据
+-- ----------------------------
+INSERT INTO `zy_product` VALUES ('1','Pronovias-2019', './upload/thumb_src/400_530/1561110440.jpg',  '');
+INSERT INTO `zy_product` VALUES ('2','046', './upload/thumb_src/400_530/1513924131.jpg', '');
+INSERT INTO `zy_product` VALUES ('3', 'BRONCE','./upload/thumb_src/400_530/1557140824.jpg', '');
+INSERT INTO `zy_product` VALUES ('4', 'CAMMIE','./upload/thumb_src/400_530/1528971967.jpg', '');
+
 
 -- ----------------------------
--- Records of zy_link
+-- Table structure for zy_details 商品详情表
 -- ----------------------------
-INSERT INTO `zy_link` VALUES ('1', '婚庆公司', '#', '1');
-INSERT INTO `zy_link` VALUES ('2', '婚庆公司', '#', '0');
-INSERT INTO `zy_link` VALUES ('3', '婚纱礼服', '#', '0');
-INSERT INTO `zy_link` VALUES ('4', '女装加盟', '#', '0');
-INSERT INTO `zy_link` VALUES ('5', '草坪婚礼', '#', '0');
-INSERT INTO `zy_link` VALUES ('6', '犀牛云', '#', '0');
-INSERT INTO `zy_link` VALUES ('7', '深圳结婚网', '#', '0');
-INSERT INTO `zy_link` VALUES ('8', '中式婚礼', '#', '0');
-INSERT INTO `zy_link` VALUES ('9', '广州婚博会', '#', '0');
+DROP TABLE IF EXISTS `zy_details`;
+CREATE TABLE `zy_details` (
+  `did` int(11) NOT NULL AUTO_INCREMENT,
+  `details_name` varchar(255) DEFAULT NULL COMMENT '产品名称',
+  `details_md_img` varchar(255) DEFAULT NULL COMMENT '展示图片',
+  `details_sm_img` varchar(255) DEFAULT NULL COMMENT '小图片',
+  `category_id` int(11) DEFAULT NULL,
+  `details_brand` varchar(255) DEFAULT '' COMMENT '品牌',
+  `details_place` varchar(255) DEFAULT '' COMMENT '产地',
+  `details_style` varchar(255) DEFAULT '' COMMENT '风格',
+  `details_material` varchar(255) DEFAULT '' COMMENT '材质',
+  `details_color` varchar(255) DEFAULT '' COMMENT '颜色',
+  `details_customized` varchar(255) DEFAULT '' COMMENT '定制/租赁',
+  `details_lg_img` varchar(1000) DEFAULT NULL COMMENT '详情图',
+  `details_content_text` varchar(2000) DEFAULT '' COMMENT '详情文字描述',
+  `details_status` int(11) DEFAULT '0',
+  `details_create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间戳',
+  PRIMARY KEY (`did`),
+  KEY `category_id` (`category_id`),
+  CONSTRAINT `zy_details_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `zy_category` (`cid`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of zy_details 商品详情表数据
+-- ----------------------------
+INSERT INTO `zy_details` VALUES('1','Pronovias - 2019','./upload/thumb_src/400_500/1561110440.jpg,./upload/thumb_src/400_500/1561109915.jpg,./upload/thumb_src/400_500/1561110192.jpg,./upload/thumb_src/400_500/1561110219.jpg,./upload/thumb_src/400_500/1561109774.jpg','./upload/thumb_src/64_64/1561110440.jpg,./upload/thumb_src/64_64/1561109915.jpg,./upload/thumb_src/64_64/1561110192.jpg,./upload/201906/1561110219.jpg,./upload/201906/1561109774.jpg','Pronovias','西班牙'.'','','','','./upload/201906/1561109602391055.jpg,./upload/201906/1561109602493473.jpg,./upload/201906/1561109602179561.jpg,./upload/201906/1561109602702174.jpg,./upload/201906/1561109602198571.jpg,./upload/201906/1561109602613877.jpg,./upload/201906/1561109602925692.jpg,./upload/201906/1561109602341081.jpg,./upload/201906/1561109603374534.jpg,./upload/201906/1561109603308964.jpg,./upload/201906/1561109602851123.jpg,./upload/201906/1561109603438726.jpg','欧美婚纱皇家品牌pronovias是推崇婚纱极简主义设计风格的楷模，旗下拥有valentino等世界顶级设计师，是西班牙巴塞罗那的pronovias目前为全球第1大婚纱礼服品牌，市占率5%，在伦敦、巴黎、纽约、伊斯坦堡、开罗及东京等都有据点，在全球60国家共有158个店面及3,800个销售店。西班牙市场占40%，平均售价在600欧元至1万2,000欧元之间.\r\n\r\n　　1964 年 Pronovias 企业推出了第一系列的现成婚纱精选，结合创新的现成婚纱概念，为奠定其 21 世纪品牌影响力迈出了重要的一步 。1968 年后的几年，Pronovias 开设了西班牙境内首家婚纱专卖店，让新娘能够在此找到她的理想婚纱和所需的一切配饰。在接下来的十年里，Pronovias 在西班牙增开了 80 家店，并开始在欧洲拓展，作为国际化的起步。到了九零年代，企业进入了美国和亚洲市场。目前在全球 75 个国家共设有 3800 销售点。\r\n\r\n　　多年的丰富经验充分反映在企业的所有决策，这项传统源自于 1922 年在巴塞罗那创立的 \"El Suizo” 新娘蕾丝、丝绸和花边店铺。我们今日的技术和知识来自于将近 100 年来为满足新娘心愿和需求所累积的经验，见证了无数的潮流变化，经得起时间的考验，成为象征这个家族和企业的精神。','0', '2019-09-14 17:35:56')
+INSERT INTO `zy_details` VALUES ('2', '046', './upload/201712/1513923926498165.jpg,./upload/201712/1513923927653361.jpg','./upload/thumb_src/64_64/1513924131.jpg,./upload/thumb_src/64_64/1513924351.jpg', '1', 'vera wang', '美国', '时尚前卫', '缎', '白色', '定制', './201712/1513923926498165.jpg,./upload/201712/1513923927653361.jpg', '', '0', '2019-09-14 17:34:14');
+INSERT INTO `zy_details` VALUES ('3', 'BRONCE', './upload/thumb_src/400_500/1557140824.jpg,./upload/thumb_src/400_500/1557140457.jpg', './upload/thumb_src/64_64/1557140824.jpg,./upload/thumb_src/64_64/1557140457.jpg','1', 'Pronovias', '西班牙', '', '', '', '', './upload/201905/1557139983632850.jpg,./upload/201905/1557139983915685.jpg,./upload/201908/1565953076133128.jpg', '', '0', '2019-09-14 17:35:56');
+INSERT INTO `zy_details` VALUES ('4', 'CAMMIE', './upload/thumb_src/400_500/1528971967.jpg,./upload/thumb_src/400_500/1528972255.jpg,./upload/thumb_src/400_500/1528972323.jpg', './upload/thumb_src/64_64/1528971967.jpg,./upload/thumb_src/64_64/1528972255.jpg,./upload/thumb_src/64_64/1528972323.jpg','3', 'At elier Pronovias', '西班牙', '', '', '', '', './upload/201806/1528971716297138.jpg,./upload/201806/1528971716149476.jpg,./upload/201806/1528971716457193.jpg', '欧美婚纱皇家品牌pronovias是推崇婚纱极简主义设计风格的楷模，旗下拥有valentino等世界顶级设计师，是西班牙巴塞罗那的pronovias目前为全球第1大婚纱礼服品牌，市占率5%，在伦敦、巴黎、纽约、伊斯坦堡、开罗及东京等都有据点，在全球60国家共有158个店面及3,800个销售店。西班牙市场占40%，平均售价在600欧元至1万2,000欧元之间.\r\n\r\n　　1964 年 Pronovias 企业推出了第一系列的现成婚纱精选，结合创新的现成婚纱概念，为奠定其 21 世纪品牌影响力迈出了重要的一步 。1968 年后的几年，Pronovias 开设了西班牙境内首家婚纱专卖店，让新娘能够在此找到她的理想婚纱和所需的一切配饰。在接下来的十年里，Pronovias 在西班牙增开了 80 家店，并开始在欧洲拓展，作为国际化的起步。到了九零年代，企业进入了美国和亚洲市场。目前在全球 75 个国家共设有 3800 销售点。\r\n\r\n　　多年的丰富经验充分反映在企业的所有决策，这项传统源自于 1922 年在巴塞罗那创立的 \"El Suizo” 新娘蕾丝、丝绸和花边店铺。我们今日的技术和知识来自于将近 100 年来为满足新娘心愿和需求所累积的经验，见证了无数的潮流变化，经得起时间的考验，成为象征这个家族和企业的精神。', '0', '2019-09-14 17:41:08');
+INSERT INTO `zy_details` VALUES ('8', 'Pronovias-SPACEGIRL', 'http://www.libeila.cc/upload/thumb_src/400_500/1565953283.jpg,http://www.libeila.cc/upload/thumb_src/400_500/1565952962.jpg,http://www.libeila.cc/upload/thumb_src/400_500/1565953529.jpg', '1', 'Pronovias', '西班牙', '修身，公主裙', '', '', '定制', 'http://www.libeila.cc/upload/201908/1565952781652333.jpg,http://www.libeila.cc/upload/201908/1565952781266373.jpg,http://www.libeila.cc/upload/201908/1565952781653786.jpg', '欧美婚纱皇家品牌pronovias是推崇婚纱极简主义设计风格的楷模，旗下拥有valentino等世界顶级设计师，是西班牙巴塞罗那的pronovias目前为全球第1大婚纱礼服品牌，市占率5%，在伦敦、巴黎、纽约、伊斯坦堡、开罗及东京等都有据点，在全球60国家共有158个店面及3,800个销售店。西班牙市场占40%，平均售价在600欧元至1万2,000欧元之间.\r\n\r\n　　1964 年 Pronovias 企业推出了第一系列的现成婚纱精选，结合创新的现成婚纱概念，为奠定其 21 世纪品牌影响力迈出了重要的一步 。1968 年后的几年，Pronovias 开设了西班牙境内首家婚纱专卖店，让新娘能够在此找到她的理想婚纱和所需的一切配饰。在接下来的十年里，Pronovias 在西班牙增开了 80 家店，并开始在欧洲拓展，作为国际化的起步。到了九零年代，企业进入了美国和亚洲市场。目前在全球 75 个国家共设有 3800 销售点。\r\n\r\n　　多年的丰富经验充分反映在企业的所有决策，这项传统源自于 1922 年在巴塞罗那创立的 \"El Suizo” 新娘蕾丝、丝绸和花边店铺。我们今日的技术和知识来自于将近 100 年来为满足新娘心愿和需求所累积的经验，见证了无数的潮流变化，经得起时间的考验，成为象征这个家族和企业的精神。', '0', '2019-09-14 17:43:53');
+
 
 -- ----------------------------
 -- Table structure for zy_message
@@ -165,37 +195,6 @@ INSERT INTO `zy_parameter` VALUES ('4', '电话', '0755-83205639', '0');
 INSERT INTO `zy_parameter` VALUES ('5', '邮编', '518000', '0');
 INSERT INTO `zy_parameter` VALUES ('6', '地址', '深圳南山华侨城方大城2#楼805-806（龙珠四路与北环大道交汇处）', '0');
 
--- ----------------------------
--- Table structure for zy_product
--- ----------------------------
-DROP TABLE IF EXISTS `zy_product`;
-CREATE TABLE `zy_product` (
-  `pid` int(11) NOT NULL AUTO_INCREMENT,
-  `product_name` varchar(255) DEFAULT NULL COMMENT '产品名称',
-  `product_show_img` varchar(255) DEFAULT NULL COMMENT '展示图片',
-  `category_id` int(11) DEFAULT NULL,
-  `product_brand` varchar(255) DEFAULT '' COMMENT '品牌',
-  `product_place` varchar(255) DEFAULT '' COMMENT '产地',
-  `product_style` varchar(255) DEFAULT '' COMMENT '风格',
-  `product_material` varchar(255) DEFAULT '' COMMENT '材质',
-  `product_color` varchar(255) DEFAULT '' COMMENT '颜色',
-  `product_customized` varchar(255) DEFAULT '' COMMENT '定制/租赁',
-  `product_content_img` varchar(1000) DEFAULT NULL COMMENT '详情图',
-  `product_content_text` varchar(2000) DEFAULT '' COMMENT '详情文字描述',
-  `product_status` int(11) DEFAULT '0',
-  `product_create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间戳',
-  PRIMARY KEY (`pid`),
-  KEY `category_id` (`category_id`),
-  CONSTRAINT `zy_product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `zy_category` (`cid`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
-
--- ----------------------------
--- Records of zy_product
--- ----------------------------
-INSERT INTO `zy_product` VALUES ('1', '046', 'http://www.libeila.cc/upload/201712/1513923926498165.jpg,http://www.libeila.cc/upload/201712/1513923927653361.jpg', '1', 'vera wang', '美国', '时尚前卫', '缎', '白色', '定制', 'http://www.libeila.cc/upload/201712/1513923926498165.jpg,http://www.libeila.cc/upload/201712/1513923927653361.jpg', '', '0', '2019-09-14 17:34:14');
-INSERT INTO `zy_product` VALUES ('2', 'Pronovias-SUNDROP', 'http://www.libeila.cc/upload/201908/1565953076488963.jpg,http://www.libeila.cc/upload/201908/1565953076133128.jpg', '1', 'Pronovias', '西班牙', '修身', '', '', '定制', 'http://www.libeila.cc/upload/201908/1565953076488963.jpg,http://www.libeila.cc/upload/201908/1565953076133128.jpg', '欧美婚纱皇家品牌pronovias是推崇婚纱极简主义设计风格的楷模，旗下拥有valentino等世界顶级设计师，是西班牙巴塞罗那的pronovias目前为全球第1大婚纱礼服品牌，市占率5%，在伦敦、巴黎、纽约、伊斯坦堡、开罗及东京等都有据点，在全球60国家共有158个店面及3,800个销售店。西班牙市场占40%，平均售价在600欧元至1万2,000欧元之间.\r\n\r\n　　1964 年 Pronovias 企业推出了第一系列的现成婚纱精选，结合创新的现成婚纱概念，为奠定其 21 世纪品牌影响力迈出了重要的一步 。1968 年后的几年，Pronovias 开设了西班牙境内首家婚纱专卖店，让新娘能够在此找到她的理想婚纱和所需的一切配饰。在接下来的十年里，Pronovias 在西班牙增开了 80 家店，并开始在欧洲拓展，作为国际化的起步。到了九零年代，企业进入了美国和亚洲市场。目前在全球 75 个国家共设有 3800 销售点。\r\n\r\n　　多年的丰富经验充分反映在企业的所有决策，这项传统源自于 1922 年在巴塞罗那创立的 \"El Suizo” 新娘蕾丝、丝绸和花边店铺。我们今日的技术和知识来自于将近 100 年来为满足新娘心愿和需求所累积的经验，见证了无数的潮流变化，经得起时间的考验，成为象征这个家族和企业的精神。', '0', '2019-09-14 17:35:56');
-INSERT INTO `zy_product` VALUES ('4', '马来褂', 'http://www.libeila.cc/upload/thumb_src/400_500/1547435406.jpg', '3', '马来褂', '', '中式礼服', '', '粉色', '定制/租赁', 'http://www.libeila.cc/upload/201901/1547435001211230.jpg,http://www.libeila.cc/upload/201901/1547435001757099.jpg,http://www.libeila.cc/upload/201901/1547435001528750.jpg,http://www.libeila.cc/upload/201901/1547435001977330.jpg,http://www.libeila.cc/upload/201901/1547435001390365.jpg,http://www.libeila.cc/upload/201901/1547435001942203.jpg', '', '0', '2019-09-14 17:41:08');
-INSERT INTO `zy_product` VALUES ('5', 'Pronovias-SPACEGIRL', 'http://www.libeila.cc/upload/thumb_src/400_500/1565953283.jpg,http://www.libeila.cc/upload/thumb_src/400_500/1565952962.jpg,http://www.libeila.cc/upload/thumb_src/400_500/1565953529.jpg', '1', 'Pronovias', '西班牙', '修身，公主裙', '', '', '定制', 'http://www.libeila.cc/upload/201908/1565952781652333.jpg,http://www.libeila.cc/upload/201908/1565952781266373.jpg,http://www.libeila.cc/upload/201908/1565952781653786.jpg', '欧美婚纱皇家品牌pronovias是推崇婚纱极简主义设计风格的楷模，旗下拥有valentino等世界顶级设计师，是西班牙巴塞罗那的pronovias目前为全球第1大婚纱礼服品牌，市占率5%，在伦敦、巴黎、纽约、伊斯坦堡、开罗及东京等都有据点，在全球60国家共有158个店面及3,800个销售店。西班牙市场占40%，平均售价在600欧元至1万2,000欧元之间.\r\n\r\n　　1964 年 Pronovias 企业推出了第一系列的现成婚纱精选，结合创新的现成婚纱概念，为奠定其 21 世纪品牌影响力迈出了重要的一步 。1968 年后的几年，Pronovias 开设了西班牙境内首家婚纱专卖店，让新娘能够在此找到她的理想婚纱和所需的一切配饰。在接下来的十年里，Pronovias 在西班牙增开了 80 家店，并开始在欧洲拓展，作为国际化的起步。到了九零年代，企业进入了美国和亚洲市场。目前在全球 75 个国家共设有 3800 销售点。\r\n\r\n　　多年的丰富经验充分反映在企业的所有决策，这项传统源自于 1922 年在巴塞罗那创立的 \"El Suizo” 新娘蕾丝、丝绸和花边店铺。我们今日的技术和知识来自于将近 100 年来为满足新娘心愿和需求所累积的经验，见证了无数的潮流变化，经得起时间的考验，成为象征这个家族和企业的精神。', '0', '2019-09-14 17:43:53');
 
 -- ----------------------------
 -- Table structure for zy_user
@@ -215,3 +214,28 @@ CREATE TABLE `zy_user` (
 -- Records of zy_user
 -- ----------------------------
 INSERT INTO `zy_user` VALUES ('1', 'szlbl', '123456', 'admin', '0', '0');
+
+-- ----------------------------
+-- Table structure for zy_link 友情链接
+-- ----------------------------
+DROP TABLE IF EXISTS `zy_link`;
+CREATE TABLE `zy_link` (
+  `lid` int(11) NOT NULL AUTO_INCREMENT,
+  `link_desc` varchar(255) DEFAULT NULL COMMENT '链接描述（显示文本）',
+  `link_url` varchar(255) DEFAULT NULL COMMENT '链接',
+  `link_status` int(11) DEFAULT '0' COMMENT '状态',
+  PRIMARY KEY (`lid`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of zy_link
+-- ----------------------------
+INSERT INTO `zy_link` VALUES ('1', '婚庆公司', '#', '1');
+INSERT INTO `zy_link` VALUES ('2', '婚庆公司', '#', '0');
+INSERT INTO `zy_link` VALUES ('3', '婚纱礼服', '#', '0');
+INSERT INTO `zy_link` VALUES ('4', '女装加盟', '#', '0');
+INSERT INTO `zy_link` VALUES ('5', '草坪婚礼', '#', '0');
+INSERT INTO `zy_link` VALUES ('6', '犀牛云', '#', '0');
+INSERT INTO `zy_link` VALUES ('7', '深圳结婚网', '#', '0');
+INSERT INTO `zy_link` VALUES ('8', '中式婚礼', '#', '0');
+INSERT INTO `zy_link` VALUES ('9', '广州婚博会', '#', '0');

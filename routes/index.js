@@ -11,5 +11,16 @@ router.get("/",(req,res)=>{
       res.send(result);
     }
   })
+});
+router.get("/f2",(req,res)=>{
+  var sql=`SELECT pid,pname,pimg from zy_product`
+  pool.query(sql,[],(err,result)=>{
+    if(err){
+      res.send(err);
+      console.log(err);
+    }else{
+      res.send(result);
+    }
+  })
 })
 module.exports=router;
