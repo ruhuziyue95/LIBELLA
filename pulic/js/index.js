@@ -36,18 +36,42 @@ $(function(){
 			$("html,body").stop(true).animate({
         scrollTop:offsetTop
       },500)
+      $(".area-cut").eq(i).addClass("active").siblings().removeClass("active");
   })
    // 页面滚动事件
-  window.onmousewheel=function(){
-    var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
-    // for(let i=0;i<fs.length;i++){
-    //   scrollTop=parseInt($(fs[i]).css("height"))*i;
-    //   $("html,body").stop(true).animate({
-    //     scrollTop
-    //   },500)
-    // }
-  }
- 
- 
-  
+   document.documentElement.style.overflow = "hidden";
+   var $cHeight = $(window).height();
+    //console.log($cHeight)
+    //console.log(window.innerHeight)
+   var setTime = null;
+   var pmoved = 0; //页面移动的单位值
+   var $floor = $(".window-bin");
+   //console.log($floor);
+   $floor.css = $({height: $cHeight });
+   var $plength = $floor.length;
+   //console.log($plength);//6
+   $(".window-cut").on("mousewheel", function (e,deltaY){
+    //deltaY：值为负的（-1），则表示滚轮向下滚动。值为正的（1），则表示滚轮向上滚动
+    if(setTime!=null){
+      clearTimeout(setTime);
+      setTime = null ;
+    }
+    setTime=setTimeout(() => {
+      if(deltaY<0){//页面向上滚动
+        pmoved++;
+        if(pmoved==$plength){
+          pmoved--;
+          return;
+        }
+      }else if(deltaY>0){//页面向下滚动
+        pmoved--;
+        if(pmoved<0){
+          pmoved = 0;
+          return;
+        }
+      }
+      $(".window-cut").css("transform",`translateY(-${$cHeight*pmoved}px)`);
+      $(".area-cut").eq(pmoved).addClass("active").siblings().removeClass("active");
+    },200)
+  })
 })
