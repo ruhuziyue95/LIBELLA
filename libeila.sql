@@ -65,7 +65,7 @@ CREATE TABLE `zy_product`(
   `pname` varchar(255) DEFAULT NULL COMMENT '产品名称',
   `pimg` varchar(255) DEFAULT NULL COMMENT '图片入径',
   `pstatus` int(11) DEFAULT '0' COMMENT '状态',
-  PRIMARY KEY (`cid`)
+  PRIMARY KEY (`pid`)
 )ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 -- ----------------------------
 -- Records of zy_category 婚纱新品数据

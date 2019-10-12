@@ -1,6 +1,6 @@
 $(function(){
   $.ajax({
-    url:"http://localhost:3030/index",
+    url:"http://localhost:3030/index/v1",
     type:"get",
     dataType:"json"
   }).then(result=>{
@@ -24,6 +24,53 @@ $(function(){
     document.querySelector("#demo>div.carousel-inner").innerHTML=html;
     document.querySelector(".carousel-item").className="carousel-item"+" "+"active";
   });
+  $.ajax({
+    url:"http://localhost:3030/index/v2",
+    type:"get",
+    dataType:"json"
+  }).then(result=>{
+    //console.log(result) 
+    var v2=result;
+    var html="";
+    for(var item of v2){
+      html+=`
+      <div class="price-bin " >
+        <a href="product-details.html">
+          <div class="bin">
+            <img class="w-100 " src="${item.pimg}"/>
+          </div>
+          <b>${item.pname}</b>
+        </a>
+      </div>
+      `
+    }
+    document.querySelector(".price-box").innerHTML=html;
+  });
+  $.ajax({
+    url:"http://localhost:3030/index/v3",
+    type:"get",
+    dataType:"json"
+  }).then(result=>{
+    //console.log(result);
+    var v3 = result;
+    var html = "";
+    for(var item of v3){
+      html += `
+      <div class="service-bin" >
+        <a href="javascript:;">
+          <img src="${item.category_img}" />
+          <i>${item.cid}</i>
+          <b class=" h5">${item.category_name}</b>
+          <p>${item.category_desc}</p>
+          <span>MORE <em>></em></span>
+        </a>
+      </div>
+      `
+      document.querySelector(".service-cut").innerHTML=html;
+      
+    }
+  })
+  
   //点击事件
   var box=document.getElementsByClassName("area-box")[0];
   var fs=document.getElementsByClassName("window-bin");

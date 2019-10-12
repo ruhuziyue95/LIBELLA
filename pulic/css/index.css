@@ -74,25 +74,30 @@ body{width:100%;}
     transition:.3s;
   }
 /* 产品的样式 三楼*/
+.f3 .service-title{
+  padding:60px 0 0 40px;
+}
 .service-cut {
   position: relative;
-  width: 1000%;
+  width: 810px;
+  overflow: hidden;
+  left:20%;
+  top:-14%;
 }
 .service-bin{
   width:270px;
   height: 550px;
-  float: left;
+  float: left;/*让块级元素一行显示*/
   position: relative;
-  margin-top:-80px;
-  top:0%;left:0%;bottom: 0%;right:0%;
+  top:0%;left:0%;
   overflow: hidden;
 }
 .service-bin:not(:first-child){
   border-left:1px solid rgba(0,0,0,.06);
 }
-.service-bin:first-child{
+/* .service-bin:first-child{
   margin-left:2%;
-}
+} */
 .service-bin a {
   display: block;
   position: absolute;
@@ -188,7 +193,7 @@ body{width:100%;}
     color:rgb(255, 255, 255);
    }
    .f4 .anenst-right .anenst-title{
-     padding:40px 80px 16px;
+     padding:60px 80px 16px;
    }
    .f4 .anenst-right .anenst-content{
      margin:0 80px;
@@ -240,7 +245,7 @@ body{width:100%;}
   }
   .title-name{
     float: left;
-    padding-bottom: 16px;
+    padding: 60px 0 0 40px;
     line-height: 1.5;
   }
   .title-name strong {
@@ -266,6 +271,7 @@ body{width:100%;}
    .info-box .info-cut{
      transform: translate3d(0px,0px,0px);
      transition-duration: 0ms;
+     
    }
    .info-box .info-cut{
      width: 1000%;
@@ -277,6 +283,7 @@ body{width:100%;}
      padding-left:80px;
      float: left;
      position: relative;
+     padding-top:60px;
    }
    .info-bin:not(:first-child){
     margin-left:80px;
@@ -435,7 +442,7 @@ body{width:100%;}
 }
 .f6 .title-name{
   position: relative;
-  padding: 50px 60px 0;
+  padding: 100px 60px 0;
   margin-bottom: 10px;
   transition: .6s;
 }
@@ -463,6 +470,7 @@ body{width:100%;}
   float: right;
   line-height: 0;
   max-width: 60%;
+  padding-right:60px;
 }
 
 
