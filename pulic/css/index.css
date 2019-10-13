@@ -437,24 +437,31 @@ body{width:100%;}
 /*第六层-->联系*/
 .f6{
   background:url(../upload/201905/1557126874.jpg) no-repeat 0px -200px;
-  margin-bottom: 55px;
+  margin-top: 60px;
   border:0;
 }
 .f6 .title-name{
   position: relative;
-  padding: 100px 60px 0;
-  margin-bottom: 10px;
-  transition: .6s;
+  padding: 60px 60px 0;
 }
 .f6 .title-name strong{
-  font-weight: 100;} 
-  .f6 .title-name:hover{
-    transition: .6s;
-    padding-left: 70px;
-  }
+  font-weight: 100;
+  transition: .6s;
+} 
+.f6 .title-name p{
+  transition: .6s;
+}
+.f6 .title-name:hover strong{
+  transition: .6s;
+  padding-left: 10px;
+}
+.f6 .title-name:hover p{
+  transition: .3s;
+  padding-left: 10px;
+}
 .f6 .touch-box{
-  margin:220px 0 21px;
-  padding: 100px 50px 86px 150px;
+  margin:160px 0 0px;
+  padding: 100px 150px;
   overflow:hidden;
 }
 .f6 .touch-left{
@@ -470,7 +477,7 @@ body{width:100%;}
   float: right;
   line-height: 0;
   max-width: 60%;
-  padding-right:60px;
+  margin-left:60px;
 }
 
 

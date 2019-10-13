@@ -32,10 +32,16 @@ footer .footer-left{opacity: 0;}
   }
   #gallery .imgLg img{
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     border:0;
     top:0%;left:30%;bottom:0%;right:2%;
+    display: none;
+    height: 450px;
   } 
+  #gallery .imgLg img.active{
+    display: block;
+    height: 450px;
+  }
   /* 箭头 */
   
   #gallery .info-ctrl .ctrl-box{
@@ -58,8 +64,9 @@ footer .footer-left{opacity: 0;}
  /* 小图片 */
  .ad-thumbs{
    position: absolute;
-   top: 102%;left: 31%;
+   top: 91%;left: 29%;
    bottom:10%;right: 0%;
+   z-index: 1600;
  }
  .ad-thumbs ul li{
    list-style: none;
@@ -67,12 +74,16 @@ footer .footer-left{opacity: 0;}
    margin-left:5px;
  }
  .ad-thumbs ul li a img{
-  border: 2px solid #fff;
+  /*border: 2px solid #fff;*/
   opacity: 0.7
-}
+  }
 .ad-thumbs ul li a img:hover{
   opacity:1;
 }
+.ad-thumbs ul li a img.active{
+  border: 2px solid #fff;
+  opacity: 1;
+  }
  /* 左侧样式 */
  .met-right{
   position: relative;

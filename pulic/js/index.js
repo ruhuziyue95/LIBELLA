@@ -70,26 +70,21 @@ $(function(){
       
     }
   })
+  //产品箭头点击事件
   
-  //点击事件
-  var box=document.getElementsByClassName("area-box")[0];
-  var fs=document.getElementsByClassName("window-bin");
-  //console.log(box)
-  $(box).on("click",".area-cut",function(e){
+  //导航栏点击事件
+  $(".area-box").on("click",".area-cut",function(){
      var $div=$(this);
-     var i=$div.attr("data-index");
+     var i=$div.attr("data-index");//0 1 2 3 4 5
      //console.log(i);
-     var offsetTop=$(fs[i]).offset().top-60;
-			$("html,body").stop(true).animate({
-        scrollTop:offsetTop
-      },500)
+      $(".window-cut").css("transform",`translateY(-${$cHeight*i}px)`);
       $(".area-cut").eq(i).addClass("active").siblings().removeClass("active");
   })
    // 页面滚动事件
    document.documentElement.style.overflow = "hidden";
    var $cHeight = $(window).height();
-    //console.log($cHeight)
-    //console.log(window.innerHeight)
+    //console.log($cHeight)//657
+    //console.log(window.innerHeight)//657
    var setTime = null;
    var pmoved = 0; //页面移动的单位值
    var $floor = $(".window-bin");
