@@ -58,20 +58,61 @@ $(function(){
       html += `
       <div class="service-bin" >
         <a href="javascript:;">
-          <img src="${item.category_img}" />
+          <img src="${item.cimg}" />
           <i>${item.cid}</i>
-          <b class=" h5">${item.category_name}</b>
-          <p>${item.category_desc}</p>
+          <b class=" h5">${item.cname}</b>
+          <p>${item.cdesc}</p>
           <span>MORE <em>></em></span>
         </a>
       </div>
       `
       document.querySelector(".service-cut").innerHTML=html;
-      
     }
   })
   //产品箭头点击事件
-  
+  var i = 0;//位置
+  $(".f3 .ctrl-right").on('click',function(){
+      var n=$(".service-cut .service-bin").length;//4
+      if(i< n-3){
+      $(`.service-cut .service-bin:eq(${i})`).css("margin-left",'-270px');
+      // console.log($(`.service-cut .service-bin:eq(${i})`))
+      //console.log(i);
+      // i++;
+      }
+  })
+  $(".f3 .ctrl-left").on('click',function(){
+    $(`.service-cut .service-bin:eq(${i})`).css("margin-left","0px");
+    //console.log($(`.service-cut .service-bin:eq(${i})`))
+  })
+  //新闻箭头点击事件
+  var n = 0;//位置
+  $(".f5 .ctrl-right").on('click',function(){
+    
+      //var n=$(".info-cut .info-bin").length;//4
+      //if(i< n-3){
+      $(`.info-cut .info-bin:eq(${n})`).css("margin-left",'-476px');
+      // console.log($(`..info-cut .info-bin:eq(${i})`))
+      //console.log(i);
+      // i++;
+      //}
+  })
+  $(".f5 .ctrl-left").on('click',function(){
+    $(`.info-cut .info-bin:eq(${n})`).css("margin-left","0px");
+    //console.log($(`..info-cut .info-bin:eq(${i})`))
+  })
+  //联系 表单验证
+  $(":text").on("blur",function(){
+    if($(this).val() == ""){
+      $(this).val("不能为空").css("color","red")
+    }
+    
+  })
+  $(":text").on("focus",function(){
+    console.log(1)
+    if($(this).val() == "不能为空"){
+      $(this).val("").css("color","white")
+    }
+  })
   //导航栏点击事件
   $(".area-box").on("click",".area-cut",function(){
      var $div=$(this);

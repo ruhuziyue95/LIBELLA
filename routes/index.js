@@ -24,7 +24,7 @@ router.get("/v2",(req,res)=>{
   })
 })
 router.get("/v3",(req,res)=>{
-  var sql=`SELECT cid,category_name,category_desc,category_img from zy_category order by cid `
+  var sql=`SELECT cid,cname,cdesc,cimg from zy_category order by cid `
   pool.query(sql,[],(err,result)=>{
     if(err){
       res.send(err);
