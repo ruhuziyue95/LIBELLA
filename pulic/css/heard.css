@@ -14,7 +14,7 @@ header{
 		cursor: pointer;
 	}
 #content a{color:#fff;font-size: 15px;}
-#content a.active{color:#c9caca}
+#content a.active{color:#167b74}
 #content a:hover{
 		color: #c9caca;
 		text-decoration: none;

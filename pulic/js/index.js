@@ -101,13 +101,13 @@ $(function(){
     //console.log($(`..info-cut .info-bin:eq(${i})`))
   })
   //联系 表单验证
-  $(":text").on("blur",function(){
+  $(":input").on("blur",function(){
     if($(this).val() == ""){
       $(this).val("不能为空").css("color","red")
     }
     
   })
-  $(":text").on("focus",function(){
+  $(":input").on("focus",function(){
     console.log(1)
     if($(this).val() == "不能为空"){
       $(this).val("").css("color","white")
