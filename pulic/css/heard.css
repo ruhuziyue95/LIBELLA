@@ -13,6 +13,9 @@ header{
 		list-style:none;
 		cursor: pointer;
 	}
+#content{
+	margin-right:50px;
+}
 #content a{color:#fff;font-size: 15px;}
 #content a.active{color:#167b74}
 #content a:hover{

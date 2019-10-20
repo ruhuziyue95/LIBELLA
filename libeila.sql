@@ -34,7 +34,9 @@ INSERT INTO `zy_cartoon` VALUES ('1', './upload/201905/1557138120.jpg', '', '0')
 INSERT INTO `zy_cartoon` VALUES ('2', './upload/201905/1557138159.jpg', '', '1');
 INSERT INTO `zy_cartoon` VALUES ('3', './upload/201905/1557138229.jpg', '', '2');
 INSERT INTO `zy_cartoon` VALUES ('4', './upload/201905/1557138878.jpg', '', '3');
-
+INSERT INTO `zy_cartoon` VALUES ('5', './upload/201905/1557139931.jpg', '', '4');
+INSERT INTO `zy_cartoon` VALUES ('6', './upload/201905/1557139184.jpg', '', '5');
+INSERT INTO `zy_cartoon` VALUES ('7', './upload/201905/1557139319.jpg', '', '6');
 -- ----------------------------
 -- Table structure for zy_category 
 -- ----------------------------
@@ -171,7 +173,24 @@ CREATE TABLE `zy_page` (
 -- ----------------------------
 -- Records of zy_page
 -- ----------------------------
-INSERT INTO `zy_page` VALUES ('1', '关于我们', '<div class=\"met-show-top\">\r\n      <p><span>深圳市黎贝拉服饰有限公司，</span>成立于2010年，我们既是一家国际品牌的集合店，又拥台湾独立设计师原创设计。</p>\r\n      <p>拥有世界一线品牌婚纱，<span> Pronovias、Atelier Pronovias、Viktor & Rolf、Armani、Lazaro、Ysa Makino、Helena Kolan、Crystal Design、Tarik Ediz、Saiid Kobeisy、Oksana Mukha 、Dany Tabet、Chic Nostalgia、Luisa Sposa、Casablanca bridal</span>等国际奢侈品牌。</p>\r\n      <p><span> 台湾独立设计师Anny作为婚纱设计师二代，</span>对时尚潮流有与生俱来的敏锐触觉和独到眼光，设计以清新唯美、浪漫的风格为主，Anny 设计使用高品质的面料，优质的制作工艺为基础。2011年3月正式登陆英国高端市场最前线，2014年4月进军美国，成功晋升为美国高端婚纱之一。</p>\r\n      <span>  LIBELLA     担任你的私人新娘形象顾问，为你打造属于个人的专属之美，人生中最重要的时刻呈现品味不凡的完美形象，留存最迷人瞬间，珍藏最动人的时刻，实现你的梦想，打造完美新娘。</span>\r\n      <span>LIBELLA、一婚纱、一辈子</span>\r\n    </div>\r\n    <div class=\"met-show-img\">\r\n      <img src=\"../upload/201710/1507799972106982.jpg\" alt=\"\">\r\n    </div>\r\n    <div class=\"met-show-bottom\">\r\n      <p>答应我</p>\r\n      <p>Promise me</p>\r\n      <p>在婚纱这件事上，不要委屈自己好吗！</p>\r\n      <p>In the wedding dress on this thing, do not wronged yourself!</p>\r\n      <p>因为，你们和别人不一样！</p>\r\n      <p>Because, you and others are not the same!</p>\r\n      <p>我们也和别人不一样！</p>\r\n      <p>We are not the same as others!</p>\r\n    </div>', '../upload/201905/1557139184.jpg', '<div class=\"px-5\">\r\n			<p> <span>深圳市黎贝拉服饰有限公司，</span>\r\n					成立于2010年，我们既是一家国际品牌的集合店，又拥台湾独立设计师原创设计。\r\n			</p>\r\n			<p>\r\n				<span>&nbsp;&nbsp;&nbsp;拥有世界一线品牌婚纱，\r\n					<strong>Pronovias、Atelier Pronovias、Viktor & Rolf、Armani、Lazaro、Ysa Makino、Helena Kolan、Crystal Design、Tarik Ediz、Saiid Kobeisy、Oksana Mukha、Dany Tabet、Chic Nostalgia、Luisa Sposa、Casablanca bridal\r\n					</strong>等国际奢侈品牌。\r\n				</span>\r\n			</p>\r\n			<p>&nbsp;&nbsp;&nbsp;台湾独立设计师Anny\r\n				<span>作为婚纱设计师二代，对时尚潮流有与生俱来的敏锐触觉和独到眼光，设计以清新唯美、浪漫的风格为主，Anny 设计使用高品质的面料，优质的制作工艺为基础。2011年3月正式登陆英国高端市场最前线，2014年4月进军美国，成功晋升为美国高端婚纱之一。</span>\r\n			</p>\r\n			<p><span>&nbsp;&nbsp;&nbsp;LIBELLA&nbsp;&nbsp;&nbsp;担任你的私人新娘形象顾问，为你打造属于个人的专属之美，人生中最重要的时刻呈现品味不凡的完美形象，留存最迷人瞬间，珍藏最动人的时刻，实现你的梦想，打造完美新娘。</span></p>\r\n			</div>', '0');
+INSERT INTO `zy_page` VALUES ('1', '关于我们', '
+          <p> 
+						<span>深圳市黎贝拉服饰有限公司，</span>
+						成立于2010年，我们既是一家国际品牌的集合店，又拥台湾独立设计师原创设计。
+					</p>
+					<p>
+						拥有世界一线品牌婚纱，
+						<span>
+						Pronovias、Atelier Pronovias、Viktor & Rolf、Armani、Lazaro、Ysa Makino、Helena Kolan、Crystal Design、Tarik Ediz、Saiid Kobeisy、Oksana Mukha、Dany Tabet、Chic Nostalgia、Luisa Sposa、Casablanca bridal
+						</span>等国际奢侈品牌。
+					</p>
+					<p>
+						<span>台湾独立设计师Anny</span>
+						作为婚纱设计师二代，对时尚潮流有与生俱来的敏锐触觉和独到眼光，设计以清新唯美、浪漫的风格为主，Anny 设计使用高品质的面料，优质的制作工艺为基础。2011年3月正式登陆英国高端市场最前线，2014年4月进军美国，成功晋升为美国高端婚纱之一。
+					</p>
+					<p>
+						<span>LIBELLA&nbsp;&nbsp;&nbsp;担任你的私人新娘形象顾问，为你打造属于个人的专属之美，人生中最重要的时刻呈现品味不凡的完美形象，留存最迷人瞬间，珍藏最动人的时刻，实现你的梦想，打造完美新娘。</span>
+					</p>,','./upload/201710/1508500994.jpg,./upload/201710/1507799972106982.jpg' ,'0');
 
 -- ----------------------------
 -- Table structure for zy_parameter

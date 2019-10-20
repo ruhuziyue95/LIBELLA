@@ -9,7 +9,7 @@ $(function(){
       var url = window.location.href;
       // 跳转后导航栏发生激活样式
       $("header .navbar-nav .nav-item>a").each(function(i,elem){
-        console.log($(elem).prop("href"))
+        //console.log($(elem).prop("href"))
         $(elem).parent().children().removeClass("active")
         if($(elem).prop("href")==url){
           $(elem).addClass("active")

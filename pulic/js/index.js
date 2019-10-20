@@ -6,12 +6,15 @@ $(function(){
   }).then(result=>{
     //console.log(result);
     /*[
-    {cid: 1, cartoon_url: "upload/201905/1557138120.jpg", cartoon_desc: "", cartoon_sort: 0}
-    {cid: 2, cartoon_url: "upload/201905/1557138159.jpg", cartoon_desc: "", cartoon_sort: 1}
-    {cid: 3, cartoon_url: "upload/201905/1557138229.jpg", cartoon_desc: "", cartoon_sort: 2}
-    {cid: 4, cartoon_url: "upload/201905/1557138878.jpg", cartoon_desc: "", cartoon_sort: 3}
+    {cid: 1, cartoon_url: "./upload/201905/1557138120.jpg", cartoon_desc: "", cartoon_sort: 0}
+    {cid: 2, cartoon_url: "./upload/201905/1557138159.jpg", cartoon_desc: "", cartoon_sort: 1}
+    {cid: 3, cartoon_url: "./upload/201905/1557138229.jpg", cartoon_desc: "", cartoon_sort: 2}
+    {cid: 4, cartoon_url: "./upload/201905/1557138878.jpg", cartoon_desc: "", cartoon_sort: 3}
     ]*/
-    var cs=result;
+    var cs=result.slice(0,4);
+    var gys=result.slice(-3);
+    console.log(gys)
+    console.log(cs)
     var html="";
     for(var i=0;i<cs.length;i++){
       //console.log(i)
@@ -22,7 +25,17 @@ $(function(){
       `
     }
     document.querySelector("#demo>div.carousel-inner").innerHTML=html;
-    document.querySelector(".carousel-item").className="carousel-item"+" "+"active";
+    document.querySelector(".carousel-item").className="carousel-item "+" active";
+    var html = ``;
+    for(var i=0;i<gys.length;i++){
+      html+=`
+      <div class="carousel-item ">
+        <img class="w-100" src="${gys[i].cartoon_url}">
+      </div>
+      `
+    }
+    document.querySelector(".f4 .carousel-inner").innerHTML=html;
+    document.querySelector(".f4 .carousel-inner .carousel-item").className="carousel-item "+ "active";
   });
   $.ajax({
     url:"http://localhost:3030/index/v2",
